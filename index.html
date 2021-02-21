@@ -9,20 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sign Up Today!</h1>
+        <!-- Error/Success Message -->
+        <div>
+            <h1>Sign Up Today!</h1>
+        </div>
+        
         <!-- Form -->
         <form id="form">
             <!-- Full Name-->
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Full Name"
+                <input type="text" id="name" placeholder="Full Name" name="name"
                     required minlength="3" maxlength="100">
                     
             </div>
             <!-- Phone Number -->
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Mobilephone Number"
+                <input type="tel" id="phone" placeholder="Mobilephone Number" name="phone"
                     required pattern="[0-9]{4}-[0-9]{6}">
                     
             </div>
@@ -30,13 +34,13 @@
             <div class="form-group">
                 <label for="Email">Email Address</label>
                 <input type="email" id="Email" placeholder="email@address.com"
-                   required> 
+                   required name="email"> 
             </div>
             <!-- Website URL -->
             <div class="form-group">
                 <label for="website">Website URL</label>
                 <input type="url" id="website" placeholder="http://ferrari.com"
-                    required>
+                    required name="website">
             </div>
             <!-- Password -->
             <div class="form-group">
@@ -48,12 +52,11 @@
             <!-- Confirm Password -->
             <div class="form-group">
                 <label for="password2">Confirm Password</label>
-                <input type="password" id="password2" placeholder="Confirm Password"
+                <input type="password" id="password2" placeholder="Confirm Password" name="password"
                     required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
             </div>
             <button type="submit">Register</button>
         </form>
-        <!-- Error/Success Message -->
         <div class="message-container">
             <h3 id="message">Don't Hesitate!</h3>
         </div>
